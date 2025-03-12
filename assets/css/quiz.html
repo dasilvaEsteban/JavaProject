@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz JavaScript</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>Testez vos connaissances en JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="chapitres/chapitre1.html">Chapitres</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="quiz-container">
+            <h2>Question 1 : Que fait le code suivant ?</h2>
+            <pre><code>
+console.log("Hello, World!");
+            </code></pre>
+            <ul>
+                <li><input type="radio" name="q1" value="a"> a) Affiche "Hello, World!" dans la console</li>
+                <li><input type="radio" name="q1" value="b"> b) Affiche une boîte de dialogue</li>
+                <li><input type="radio" name="q1" value="c"> c) Déclenche une erreur</li>
+            </ul>
+            <button onclick="verifierReponse()">Valider</button>
+            <p id="resultat"></p>
+        </section>
+    </main>
+    <script src="assets/js/quiz.js"></script>
+    <footer>
+        <p>&copy; 2025 Apprenez JS - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
